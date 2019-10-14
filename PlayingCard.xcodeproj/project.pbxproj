@@ -13,6 +13,9 @@
 		8497B979235504FC006C2D37 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8497B977235504FC006C2D37 /* Main.storyboard */; };
 		8497B97B235504FE006C2D37 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8497B97A235504FE006C2D37 /* Assets.xcassets */; };
 		8497B97E235504FE006C2D37 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8497B97C235504FE006C2D37 /* LaunchScreen.storyboard */; };
+		8497B9872355062C006C2D37 /* PlayingCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8497B9862355062C006C2D37 /* PlayingCard.swift */; };
+		8497B98B23550A50006C2D37 /* PlayingCardDeck.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8497B98A23550A50006C2D37 /* PlayingCardDeck.swift */; };
+		8497B98D23551528006C2D37 /* PlayingCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8497B98C23551528006C2D37 /* PlayingCardView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		8497B97A235504FE006C2D37 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8497B97D235504FE006C2D37 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8497B97F235504FE006C2D37 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8497B9862355062C006C2D37 /* PlayingCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayingCard.swift; sourceTree = "<group>"; };
+		8497B98A23550A50006C2D37 /* PlayingCardDeck.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayingCardDeck.swift; sourceTree = "<group>"; };
+		8497B98C23551528006C2D37 /* PlayingCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayingCardView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +62,26 @@
 		8497B970235504FC006C2D37 /* PlayingCard */ = {
 			isa = PBXGroup;
 			children = (
-				8497B971235504FC006C2D37 /* AppDelegate.swift */,
-				8497B973235504FC006C2D37 /* SceneDelegate.swift */,
+				8497B98A23550A50006C2D37 /* PlayingCardDeck.swift */,
 				8497B975235504FC006C2D37 /* ViewController.swift */,
+				8497B98C23551528006C2D37 /* PlayingCardView.swift */,
+				8497B9862355062C006C2D37 /* PlayingCard.swift */,
 				8497B977235504FC006C2D37 /* Main.storyboard */,
-				8497B97A235504FE006C2D37 /* Assets.xcassets */,
-				8497B97C235504FE006C2D37 /* LaunchScreen.storyboard */,
+				8497B9852355060B006C2D37 /* Supporting Files */,
 				8497B97F235504FE006C2D37 /* Info.plist */,
 			);
 			path = PlayingCard;
+			sourceTree = "<group>";
+		};
+		8497B9852355060B006C2D37 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8497B971235504FC006C2D37 /* AppDelegate.swift */,
+				8497B973235504FC006C2D37 /* SceneDelegate.swift */,
+				8497B97A235504FE006C2D37 /* Assets.xcassets */,
+				8497B97C235504FE006C2D37 /* LaunchScreen.storyboard */,
+			);
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,7 +156,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				8497B976235504FC006C2D37 /* ViewController.swift in Sources */,
+				8497B98D23551528006C2D37 /* PlayingCardView.swift in Sources */,
 				8497B972235504FC006C2D37 /* AppDelegate.swift in Sources */,
+				8497B98B23550A50006C2D37 /* PlayingCardDeck.swift in Sources */,
+				8497B9872355062C006C2D37 /* PlayingCard.swift in Sources */,
 				8497B974235504FC006C2D37 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -284,7 +304,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = PlayingCard/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -292,6 +314,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.ysered.PlayingCard;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -301,7 +324,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = PlayingCard/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -309,6 +334,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.ysered.PlayingCard;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
